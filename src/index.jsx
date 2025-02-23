@@ -1,12 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client"; // Asegúrate de que sea esta importación
-import contacts from "./contacts";
 
 import App from "./components/App"; // O donde esté tu componente principal
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <App contacts={contacts} />
+    <App />
   </React.StrictMode>
 );
 

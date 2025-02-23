@@ -1,55 +1,29 @@
 import React from "react";
+import contacts from "../contacts";
+import Cards from "./Cards";
 
-function App(props) {
+function App() {
   return (
     <div>
       <h1 className="heading">My Contacts</h1>
-      <div className="card">
-        <div className="top">
-          <h2 className="name">{props.contacts[0].name}</h2>
-          <img
-            className="img circle-img"
-            src={props.contacts[0].imgURL}
-            alt="avatar_img"
-          />
-        </div>
-        <div className="bottom">
-          <p>{props.contacts[0].phone}</p>
-          <p>{props.contacts[0].email}</p>
-        </div>
-      </div>
-      <div>
-        <div className="card">
-          <div className="top">
-            <h2 className="name">{props.contacts[1].name}</h2>
-            <img
-              className="img circle-img"
-              src={props.contacts[1].imgURL}
-              alt="avatar_img"
-            />
-          </div>
-          <div className="bottom">
-            <p>{props.contacts[1].phone}</p>
-            <p>{props.contacts[1].email}</p>
-          </div>
-        </div>
-        <div></div>
-      </div>
-
-      <div className="card">
-        <div className="top">
-          <h2 className="name">{props.contacts[2].name}</h2>
-          <img
-            className="img circle-img"
-            src={props.contacts[2].imgURL}
-            alt="avatar_img"
-          />
-        </div>
-        <div className="bottom">
-          <p>{props.contacts[2].phone}</p>
-          <p>{props.contacts[2].email}</p>
-        </div>
-      </div>
+      <Cards
+        name={contacts[0].name}
+        imgURL={contacts[0].imgURL}
+        phone={contacts[0].phone}
+        email={contacts[0].email}
+      />
+      <Cards
+        name={contacts[1].name}
+        imgURL={contacts[1].imgURL}
+        phone={contacts[1].phone}
+        email={contacts[1].email}
+      />
+      <Cards
+        name={contacts[2].name}
+        imgURL={contacts[2].imgURL}
+        phone={contacts[2].phone}
+        email={contacts[2].email}
+      />
     </div>
   );
 }
