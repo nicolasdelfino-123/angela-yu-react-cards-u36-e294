@@ -7,7 +7,7 @@ const Cards = (props) => {
     <div>
       <div className="card">
         <div className="top">
-          <h2 className="name">{props.name}</h2>
+          <h2 className="name">{props.nombre}</h2>
           <Avatar img={props.img} />
         </div>
         <div className="bottom">
